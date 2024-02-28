@@ -1,0 +1,306 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta name="google-site-verification" content="ZXuNHGxCCD6lbDQFwhx2pKJ4cJWRFOPUs7l_FQMFc20" />
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Add the following line to link your favicon -->
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  <!-- Ionic icons -->
+  <link href="https://unpkg.com/ionicons@4.2.0/dist/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+  <title>NovoNex - Home</title>
+
+  <style>
+    /* CSS styles here */
+    body {
+      background-color: #f8f9fa;
+      font-family: 'Roboto', sans-serif;
+    }
+
+    .form-container {
+      max-width: 400px;
+      margin: 50px auto;
+      padding: 30px;
+      border: 1px solid #ced4da;
+      border-radius: 10px;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-heading {
+      text-align: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+      color: #007bff;
+    }
+
+    .form-label {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 12px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+    }
+
+    .form-button {
+      width: 100%;
+      padding: 12px;
+      font-size: 18px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .form-button:hover {
+      background-color: #0056b3;
+    }
+
+    .thankyou_message {
+      display: none;
+      background: #f9f9f9;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 20px;
+      margin-top: 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- N A V B A R -->
+  <nav class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="icon ion-md-menu"></span>
+    </button>
+    <img src="images/logo.png" class="img-fluid nav-logo-mobile" alt="Company Logo">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="container">
+        <img src="images/logo.png" class="img-fluid nav-logo-desktop" alt="Company Logo">
+        <ul class="navbar-nav ml-auto nav-right" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
+          <li class="nav-item nav-custom-link">
+            <a class="nav-link" href="index.html">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+          </li>
+          <li class="nav-item nav-custom-link">
+            <a class="nav-link" href="#">About us <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+          <li class="nav-item nav-custom-link btn btn-demo-small">
+            <a class="nav-link" href="https://forms.gle/LUhPNEz5GP391yg9A">Registration <i
+                class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <br>
+  <center>
+    <form class="gform pure-form pure-form-stacked" method="POST" data-email="novonex010@gmail.com"
+      action="https://script.google.com/macros/s/AKfycbyhQ6KFM6PIdyMs9V1TtLfW4XeYy-xUcxNJDGEB99P7xuBNXy5wR8DynlLVAgB8E7J1SA/exec">
+      <div class="form-container">
+        <div class="form-heading">Discrete Mathematics Course Registration</div>
+        <div class="form-elements">
+          <div>
+            <label class="form-label" for="Name">Name</label>
+            <input class="form-input" type="text" name="Name" required>
+          </div>
+          <div>
+            <label class="form-label" for="Email">Email</label>
+            <input class="form-input" type="email" name="Email" required>
+          </div>
+          <div>
+            <label class="form-label" for="Phone">Phone</label>
+            <input class="form-input" type="number" name="Phone" required>
+          </div>
+          <button class="form-button" type="submit">Registration</button>
+        </div>
+      </div>
+      <!-- Thankyou_message -->
+      <div class="thankyou_message" <br><br>
+        <h1>Thanks for Registration!</h1>
+        <h1>*******</h1>
+      </div>
+    </form>
+    <script data-cfasync="false" type="text/javascript">
+
+      (function () {
+        function validEmail(email) {
+          var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+          return re.test(email);
+        }
+
+        function validateHuman(honeypot) {
+          if (honeypot) {
+            console.log("Robot Detected!");
+            return true;
+          } else {
+            console.log("Welcome Human!");
+          }
+        }
+        function getFormData(form) {
+          var elements = form.elements;
+
+          var fields = Object.keys(elements).filter(function (k) {
+            return (elements[k].name !== "honeypot");
+          }).map(function (k) {
+            if (elements[k].name !== undefined) {
+              return elements[k].name;
+            } else if (elements[k].length > 0) {
+              return elements[k].item(0).name;
+            }
+          }).filter(function (item, pos, self) {
+            return self.indexOf(item) == pos && item;
+          });
+
+          var formData = {};
+          fields.forEach(function (name) {
+            var element = elements[name];
+            formData[name] = element.value;
+            if (element.length) {
+              var data = [];
+              for (var i = 0; i < element.length; i++) {
+                var item = element.item(i);
+                if (item.checked || item.selected) {
+                  data.push(item.value);
+                }
+              }
+              formData[name] = data.join(', ');
+            }
+          });
+
+          // add form-specific values into the data
+          formData.formDataNameOrder = JSON.stringify(fields);
+          formData.formGoogleSheetName = form.dataset.sheet || "sheet1"; // default sheet name
+          formData.formGoogleSendEmail = form.dataset.email || ""; // no email by default
+
+          console.log(formData);
+          return formData;
+        }
+
+        function handleFormSubmit(event) {
+          event.preventDefault();
+          var form = event.target;
+          var data = getFormData(form);
+          if (data.email && !validEmail(data.email)) {
+            var invalidEmail = form.querySelector(".email-invalid");
+            if (invalidEmail) {
+              invalidEmail.style.display = "block";
+              return false;
+            }
+          } else {
+            disableAllButtons(form);
+            var url = form.action;
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', url);
+            xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+            xhr.onreadystatechange = function () {
+              console.log(xhr.status, xhr.statusText);
+              console.log(xhr.responseText);
+              var formElements = form.querySelector(".form-elements")
+              if (formElements) {
+                formElements.style.display = "none"; // hide form
+              }
+              var thankYouMessage = form.querySelector(".thankyou_message");
+              if (thankYouMessage) {
+                thankYouMessage.style.display = "block";
+              }
+              return;
+            };
+            var encoded = Object.keys(data).map(function (k) {
+              return encodeURIComponent(k) + "=" + encodeURIComponent(data[k]);
+            }).join('&');
+            xhr.send(encoded);
+          }
+        }
+
+        function loaded() {
+          console.log("Contact form submission handler loaded successfully.");
+          var forms = document.querySelectorAll("form.gform");
+          for (var i = 0; i < forms.length; i++) {
+            forms[i].addEventListener("submit", handleFormSubmit, false);
+          }
+        };
+        document.addEventListener("DOMContentLoaded", loaded, false);
+
+        function disableAllButtons(form) {
+          var buttons = form.querySelectorAll("button");
+          for (var i = 0; i < buttons.length; i++) {
+            buttons[i].disabled = true;
+          }
+        }
+      })();
+
+
+    </script>
+  </center>
+
+
+  <!-- External JavaScripts -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <!-- Messenger Chat Plugin Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Chat Plugin code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "140051219197327");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v18.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+</body>
+
+</html>
