@@ -1,0 +1,409 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+  <meta name="google-site-verification" content="ZXuNHGxCCD6lbDQFwhx2pKJ4cJWRFOPUs7l_FQMFc20" />
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Add the following line to link your favicon -->
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+  <!-- Custom Css -->
+  <link rel="stylesheet" href="style.css" type="text/css" />
+
+  <!-- Ionic icons -->
+  <link href="https://unpkg.com/ionicons@4.2.0/dist/css/ionicons.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    /**********************************/
+    /***** Layout & Section Title *****/
+    /**********************************/
+    .container1 {
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @media (min-width: 576px) {
+      .container1 {
+        max-width: 540px;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .container1 {
+        max-width: 720px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .container1 {
+        max-width: 960px;
+      }
+    }
+
+    @media (min-width: 1200px) {
+      .container1 {
+        max-width: 1140px;
+      }
+    }
+
+    .row1 {
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
+
+    .column1 {
+      position: relative;
+      width: 100%;
+      padding-right: 15px;
+      padding-left: 15px;
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    @media (min-width: 576px) {
+      .column1 {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
+
+    @media (min-width: 768px) {
+      .column1 {
+        -ms-flex: 0 0 33.333333%;
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+      }
+    }
+
+    @media (min-width: 992px) {
+      .column1 {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+        max-width: 25%;
+      }
+    }
+
+    .section-title1 {
+      width: 100%;
+      text-align: center;
+      padding: 45px 0 30px 0;
+    }
+
+    .section-title1::after {
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 5px;
+      left: calc(50% - 25px);
+      background: #353535;
+    }
+
+    .section-title1 h1 {
+      color: #353535;
+      font-size: 50px;
+      letter-spacing: 5px;
+      margin-bottom: 5px;
+    }
+
+    @media(max-width: 767.98px) {
+      .section-title1 h1 {
+        font-size: 40px;
+        letter-spacing: 3px;
+      }
+    }
+
+    @media(max-width: 567.98px) {
+      .section-title1 h1 {
+        font-size: 30px;
+        letter-spacing: 2px;
+      }
+    }
+
+    /**********************************/
+    /********** Team #2 Style *********/
+    /**********************************/
+    .team-2 {
+      text-align: center;
+      margin-bottom: 30px;
+      border-radius: 5px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .team-2 .team-img {
+      position: relative;
+      font-size: 0;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .team-2 .team-img img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px 5px 0 0;
+    }
+
+    .team-2 .team-social {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      padding: 20px;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(255, 255, 255, .5);
+      transition: all .3s;
+      font-size: 0;
+      z-index: 1;
+      opacity: 0;
+    }
+
+    .team-2:hover .team-social {
+      opacity: 1;
+    }
+
+    .team-2 .team-social a {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      margin-right: 5px;
+      padding: 11px 0 10px 0;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 16px;
+      text-align: center;
+      color: #ffffff;
+      border-radius: 5px;
+      transition: all .3s;
+      margin-top: 50px;
+    }
+
+    .team-2 .team-social a.social-tw {
+      background: #00acee;
+    }
+
+    .team-2 .team-social a.social-fb {
+      background: #3b5998;
+    }
+
+    .team-2 .team-social a.social-li {
+      background: #0e76a8;
+    }
+
+    .team-2 .team-social a.social-in {
+      background: #3f729b;
+    }
+
+    .team-2 .team-social a.social-yt {
+      background: #c4302b;
+    }
+
+    .team-2 .team-social a:last-child {
+      margin-right: 0;
+    }
+
+    .team-2:hover .team-social a {
+      margin-top: 0;
+    }
+
+    .team-2 .team-social a:hover {
+      color: #222222;
+      background: #ffffff;
+    }
+
+    .team-2 .team-content {
+      padding: 20px;
+    }
+
+    .team-2 .team-content h2 {
+      font-size: 25px;
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
+
+    .team-2 .team-content h3 {
+      font-size: 16px;
+      font-weight: 300;
+    }
+
+    .team-2 .team-content h4 {
+      font-size: 16px;
+      font-weight: 300;
+      font-style: italic;
+      letter-spacing: 1px;
+      margin-bottom: 0;
+    }
+
+    .team-2 .team-content p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 22px;
+    }
+  </style>
+
+  <title>NovoNex - Home</title>
+</head>
+
+<body>
+
+  <!-- N A V B A R -->
+  <nav class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="icon ion-md-menu"></span>
+    </button>
+    <img src="images/logo.png" class="img-fluid nav-logo-mobile" alt="Company Logo">
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="container">
+        <img src="images/logo.png" class="img-fluid nav-logo-desktop" alt="Company Logo">
+        <ul class="navbar-nav ml-auto nav-right" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
+          <li class="nav-item nav-custom-link">
+            <a class="nav-link" href="index.html">Home <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+          </li>
+          <li class="nav-item nav-custom-link">
+            <a class="nav-link" href="#">About us <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+          <li class="nav-item nav-custom-link btn btn-demo-small">
+            <a class="nav-link" href="https://forms.gle/LUhPNEz5GP391yg9A">Registration <i
+                class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- E N D  N A V B A R -->
+  <br>
+  <!-- Team #2 Start -->
+  <div class="container1">
+    <div class="section-title1">
+      <h1>Our Team</h1>
+    </div>
+    <div class="row1">
+      <div class="column1">
+        <div class="team-2">
+          <div class="team-img">
+            <img src="img/team/1.png" alt="Team Image">
+            <div class="team-social">
+              <a class="social-fb" href="https://www.facebook.com/tamim.hossain.16503"><i
+                  class="fab fa-facebook-f"></i></a>
+            </div>
+          </div>
+          <div class="team-content">
+            <h2>Md. Tamim Hossain </h2>
+            <h3>Studies B.Sc (Honours) Dept. of CSE at UIU</h3>
+            <p>Phone : +8801602-334501</p>
+            <h4>mhossain2330447@bscse<br>.uiu.ac.bd</h4>
+          </div>
+        </div>
+      </div>
+      <div class="column1">
+        <div class="team-2">
+          <div class="team-img">
+            <img src="img/team/3.png" alt="Team Image">
+            <div class="team-social">
+
+              <a class="social-fb" href="https://www.facebook.com/bhowmik.2645"><i class="fab fa-facebook-f"></i></a>
+
+            </div>
+          </div>
+          <div class="team-content">
+            <h2>Anik Bhowmik </h2>
+            <h3>Studies B.Sc (Honours) Dept. of CSE at UIU</h3>
+            <p>Phone : +8801518-945613</p>
+            <h4>abhowmik2330035@bscse<br>.uiu.ac.bd</h4>
+          </div>
+        </div>
+      </div>
+      <div class="column1">
+        <div class="team-2">
+          <div class="team-img">
+            <img src="img/team/2.png" alt="Team Image">
+            <div class="team-social">
+
+              <a class="social-fb" href="https://www.facebook.com/arpon.tanjimur/"><i class="fab fa-facebook-f"></i></a>
+
+            </div>
+          </div>
+          <div class="team-content">
+            <h2>Tanjimur Rahman Arpon </h2>
+            <h3>Studies B.Sc (Honours) Dept. of CSE at UIU</h3>
+            <p>Phone : +8801580-401289</p>
+            <h4>tarpon2330038@bscse<br>.uiu.ac.bd</h4>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!-- Team #2 End -->
+
+  <a href="https:/wa.me/+8801580401289" target="_blank" class="whatsapp_float"><i
+      class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
+
+  <!-- External JavaScripts -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+    crossorigin="anonymous"></script>
+  <!-- Messenger Chat Plugin Code -->
+  <div id="fb-root"></div>
+
+  <!-- Your Chat Plugin code -->
+  <div id="fb-customer-chat" class="fb-customerchat">
+  </div>
+
+  <script>
+    var chatbox = document.getElementById('fb-customer-chat');
+    chatbox.setAttribute("page_id", "140051219197327");
+    chatbox.setAttribute("attribution", "biz_inbox");
+  </script>
+
+  <!-- Your SDK code -->
+  <script>
+    window.fbAsyncInit = function () {
+      FB.init({
+        xfbml: true,
+        version: 'v18.0'
+      });
+    };
+
+    (function (d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
+</body>
+
+</html>
