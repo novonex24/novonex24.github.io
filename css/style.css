@@ -346,19 +346,19 @@ section {
 }
 
 .review-one {
-  background-image: url('images/discord.png');
+  background-image: url('../images/discord.png');
 }
 .review-one1 {
-	background-image: url('images/facebook.png');
+	background-image: url('../images/facebook.png');
   }
 .review-one2 {
-	background-image: url('images/f_group.png');
+	background-image: url('../images/f_group.png');
   }
 .review-one3 {
-	background-image: url('images/telegram.png');
+	background-image: url('../images/telegram.png');
   }
 .review-one4 {
-	background-image: url('images/youtube.png');
+	background-image: url('../images/youtube.png');
   }
 .personal-info {
 	padding: 5px 0 20px 0;
