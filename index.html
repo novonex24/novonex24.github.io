@@ -30,6 +30,22 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <title>NovoNex - Home</title>
+
+   <!-- Push Notification -->
+  <script src="js/push.min.js"></script>
+  <script src="js/serviceWorker.min.js"></script>
+  <script>
+    Push.create("Hello world!", {
+    body: "How's it hangin'?",
+    icon: '/icon.png',
+    timeout: 4000,
+    onClick: function () {
+        window.focus();
+        this.close();
+    }
+});
+  </script>
+  
 </head>
 
 <body>
