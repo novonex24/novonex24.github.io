@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en-US">
+
+<head>
+    <meta name="google-site-verification" content="ZXuNHGxCCD6lbDQFwhx2pKJ4cJWRFOPUs7l_FQMFc20" />
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Add the following line to link your favicon -->
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+    <!-- Ionic icons -->
+    <link href="https://unpkg.com/ionicons@4.2.0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        .card1__title {
+            grid-row: 3/4;
+            font-weight: 400;
+            color: #ffffff;
+            font-size: 20px;
+            /* Adjust the font size as needed */
+            line-height: 1.5;
+            /* Adjust the line height as needed */
+        }
+
+        @media (max-width: 768px) {
+            .card1__title {
+                font-size: 20px;
+                /* Adjust the font size for smaller screens */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .card1__title {
+                font-size: 16px;
+                /* Adjust the font size for even smaller screens */
+            }
+        }
+
+
+        /* CARDS */
+
+        .cards1 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .card1 {
+            margin: 20px;
+            padding: 20px;
+            width: 500px;
+            min-height: 200px;
+            display: grid;
+            grid-template-rows: 20px 50px 1fr 50px;
+            border-radius: 10px;
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.25);
+            transition: all 0.2s;
+        }
+
+        .card1:hover {
+            box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+            transform: scale(1.01);
+        }
+
+        .card1__link,
+        .card1__exit,
+        .card1__icon {
+            position: relative;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .card1__link::after {
+            position: absolute;
+            top: 25px;
+            left: 0;
+            content: "";
+            width: 0%;
+            height: 3px;
+            background-color: rgba(255, 255, 255, 0.6);
+            transition: all 0.5s;
+        }
+
+        .card1__link:hover::after {
+            width: 100%;
+        }
+
+        .card1__exit {
+            grid-row: 1/2;
+            justify-self: end;
+        }
+
+        .card1__icon {
+            grid-row: 2/3;
+            font-size: 30px;
+        }
+
+        .card1__title {
+            grid-row: 3/4;
+            font-weight: 300;
+            color: #ffffff;
+        }
+
+        .card1__apply {
+            grid-row: 4/5;
+            align-self: center;
+        }
+
+        /* CARD BACKGROUNDS */
+
+        .card1-1 {
+            background: radial-gradient(#1fe4f5, #3fbafe);
+        }
+
+        .card1-2 {
+            background: radial-gradient(#fbc1cc, #fa99b2);
+        }
+
+        .card1-3 {
+            background: radial-gradient(#76b2fe, #b69efe);
+        }
+
+        .card1-4 {
+            background: radial-gradient(#60efbc, #58d5c9);
+        }
+
+        .card1-5 {
+            background: radial-gradient(#f588d8, #c0a3e5);
+        }
+
+        /* RESPONSIVE */
+
+        @media (max-width: 1600px) {
+            .cards1 {
+                justify-content: center;
+            }
+        }
+    </style>
+
+    <title>NovoNex - Web App</title>
+</head>
+
+<body>
+
+    <!-- N A V B A R -->
+    <nav class="navbar navbar-default navbar-expand-lg fixed-top custom-navbar">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="icon ion-md-menu"></span>
+        </button>
+        <a href="index.html"> <!-- Wrap logo in anchor tag -->
+            <img src="images/logo.png" class="img-fluid nav-logo-mobile" alt="Company Logo">
+        </a>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="container">
+                <a href="index.html"> <!-- Wrap logo in anchor tag -->
+                    <img src="images/logo.png" class="img-fluid nav-logo-desktop" alt="Company Logo">
+                </a>
+                <ul class="navbar-nav ml-auto nav-right" data-easing="easeInOutExpo" data-speed="1250" data-offset="65">
+                    <li class="nav-item nav-custom-link">
+                        <a class="nav-link" href="index.html">Home <i
+                                class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                    </li>
+                    <li class="nav-item nav-custom-link">
+                        <a class="nav-link" href="web_app.html">Web App <i
+                                class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                    <li class="nav-item nav-custom-link">
+                        <a class="nav-link" href="team.html">About Team <i
+                                class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                    <li class="nav-item nav-custom-link btn btn-demo-small">
+                        <a class="nav-link" href="#">Courses <i class="icon ion-ios-arrow-forward icon-mobile"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- E N D  N A V B A R -->
+    <br><br><br>
+
+    <div class="main-container3">
+        <a href="web_app/dm_web_app.html" class="card-link">
+            <div class="cards1">
+                <div class="card1 card1-1">
+                    <div class="card1__icon"><i class="fa fa-bolt"></i></div>
+                    <h2 class="card1__title"><b>Discrete Mathematics</b> <br>Web Application</h2>
+                </div>
+            </div>
+        </a>
+
+        <a href="web_app/english1_web_app.html" class="card-link">
+            <div class="cards1">
+                <div class="card1 card1-2">
+                    <div class="card1__icon"><i class="fa fa-bolt"></i></div>
+                    <h2 class="card1__title"><b>English</b> <br>Web Application</h2>
+                </div>
+            </div>
+        </a>
+
+
+        <a href="web_app/english1_web_app.html" class="card-link">
+            <div class="cards1">
+                <div class="card1 card1-3">
+                    <div class="card1__icon"><i class="fa fa-bolt"></i></div>
+                    <h2 class="card1__title"><b>ICS</b> <br>Web Application</h2>
+                </div>
+            </div>
+        </a>
+
+
+    </div>
+
+
+
+
+
+
+
+    <a href="https://wa.me/+8801518945613" target="_blank" class="whatsapp_float"><i
+            class="fa-brands fa-whatsapp whatsapp-icon"></i></a>
+
+    <!-- External JavaScripts -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
